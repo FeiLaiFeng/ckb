@@ -960,7 +960,6 @@ impl NetworkService {
             .key_pair(network_state.local_private_key.clone())
             .upnp(config.upnp)
             .forever(true)
-            .max_connection_number(1024)
             .build(event_handler);
 
         // == Build background service tasks
